@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Качественный чат</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div id="sidebar">
+        <h3>Пользователи онлайн</h3>
+        <ul id="users"></ul>
+      </div>
+      <div id="chat">
+        <ul id="messages"></ul>
+        <form id="form">
+          <input
+            id="input"
+            autocomplete="off"
+            placeholder="Введите сообщение"
+          />
+          <button>Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="usernameModal">
+      <div class="modal-content">
+        <h3>Введите ваше имя</h3>
+        <input id="usernameInput" placeholder="Ваше имя" />
+        <button id="usernameSubmit" type="submit">Войти</button>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
